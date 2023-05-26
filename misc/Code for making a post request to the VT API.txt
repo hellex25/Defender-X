@@ -1,0 +1,11 @@
+url = 'https://www.virustotal.com/api/v3/files'
+headers = {
+    'x-apikey': API_KEY
+}
+
+with open(file_path, 'rb') as f:
+    files = {
+        'file': f
+    }
+    response = requests.post(url, headers=headers, files=files)
+    # ... (handle response)
