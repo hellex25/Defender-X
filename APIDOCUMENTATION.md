@@ -1,4 +1,3 @@
-Certainly! Here's an updated version of the documentation that includes information about the API you used:
 
 ---
 
@@ -67,5 +66,3 @@ When using the VirusTotal API within DefenderX, keep the following consideration
 For more information about the VirusTotal API and its capabilities, refer to the official VirusTotal API documentation at [https://developers.virustotal.com](https://developers.virustotal.com).
 
 ---
-
-Please note that this documentation is a sample and should be customized to include all the relevant details
