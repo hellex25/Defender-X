@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DefenderX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+</head>
+<body>
+    <div class="background">
+        <div class="blur-overlay">
+            <div class="container">
+                <h1>DefenderX</h1> <!-- Titlul principal al paginii -->
+
+                <form id="scanForm">
+                    <label for="file" class="file-label">Selectează un fișier:</label> <!-- Etichetă pentru selectarea unui fișier -->
+                    <div class="file-input-container">
+                        <input type="file" id="file" name="file"> <!-- Câmpul de încărcare fișier -->
+                        <label for="file" class="file-input-label">Alege fișier</label>
+                        <span id="fileName"></span> <!-- Spațiul unde va fi afișat numele fișierului selectat -->
+                    </div>
+                    <label for="url" class="url-label">Sau introdu un URL:</label> <!-- Etichetă pentru introducerea unui URL -->
+                    <input type="text" id="url" name="url" class="url-input"> <!-- Câmpul pentru introducerea URL-ului -->
+                    <button type="submit" class="analyze-button">Analizează</button> <!-- Butonul pentru inițierea analizei -->
+                </form>
+
+                <div class="description-box">
+                    <h2>Bun venit la DefenderX</h2> <!-- Subtitlul paginii -->
+                    <p>DefenderX este o platformă avansată de analiză a fișierelor, alimentată de VirusTotal. Oferă analize și rapoarte în timp real cu privire la riscurile și amenințările potențiale asociate cu fișierele și URL-urile. Încarcă un fișier sau introdu un URL pentru a începe.</p> <!-- Paragraful de descriere a platformei -->
+                </div>
+
+                <div class="information-button">
+                    <a href="/info" class="button">Află mai multe</a> <!-- Butonul pentru a accesa pagina de informații -->
+                </div>
+
+                <div class="loader" id="loader"></div> <!-- Elementul de încărcare -->
+                <div id="result" class="result"></div> <!-- Containerul pentru rezultate -->
+
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script> <!-- Fișierul JavaScript pentru funcționalitatea paginii -->
+</body>
+</html>

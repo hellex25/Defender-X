@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='info.css') }}" type="text/css">
+</head>
+<body>
+    <div class="background">
+        <div class="blur-overlay">
+            <div class="container">
+                <button class="home-button" onclick="window.location.href='/'">Go Back to Homepage</button>
+                <div class="logo-container">
+                    <img src="static/logo.png" alt="DefenderX Logo" class="logo">
+                    <h1 class="title">DefenderX</h1>
+                </div>
+                <div class="information">
+                    <h2>About DefenderX</h2>
+                    <p>DefenderX este o platformă avansată de securitate cibernetică care se concentrează pe protejarea activelor digitale de amenințări și vulnerabilități. Oferim soluții complete pentru a ajuta persoanele și organizațiile să-și protejeze datele, sistemele și rețelele.</p>
+                    
+                    <h2>Motivul creării platformei</h2>
+                    <p>DefenderX a început ca un proiect care urmărea să fie o unealtă ușoară pentru a educa oamenii despre amenințările cibernetice. Poate fi rulată în orice browser, folosește resurse minime și oferă informații concișe și complete despre fișierele scanate.</p>
+
+                    <h2>Importanța securității cibernetice</h2>
+                    <p>Securitatea cibernetică este crucială în lumea interconectată de astăzi pentru a proteja informațiile sensibile, a preveni accesul neautorizat și a reduce riscurile. Ajută la menținerea confidențialității, a încrederii, a conformității și la protejarea împotriva amenințărilor cibernetice, cum ar fi încălcările de date, atacurile de malware și furtul de identitate.</p>
+                    
+                    <h2>Cum ajută securitatea cibernetică</h2>
+                    <p>Securitatea cibernetică ajută în diferite moduri:</p>
+                    <ul>
+                        <li>Protejarea datelor confidențiale și sensibile împotriva accesului neautorizat.</li>
+                        <li>Detectarea și prevenirea amenințărilor și atacurilor cibernetice în timp real.</li>
+                        <li>Protejarea sistemelor și rețelelor împotriva malware-ului, virușilor și altor activități dăunătoare.</li>
+                        <li>Implementarea măsurilor de securitate și a celor mai bune practici pentru asigurarea integrității și disponibilității datelor.</li>
+                        <li>Oferirea de strategii de răspuns la incidente și de recuperare pentru a reduce impactul incidentelor de securitate.</li>
+                        <li>Crearea de conștientizare și educarea utilizatorilor cu privire la riscurile și la cele mai bune practici în domeniul securității cibernetice.</li>
+                    </ul>
+
+                    <h2>Necesitatea educației în securitatea cibernetică</h2>
+                    <p>În peisajul digital actual, mulți oameni nu au cunoștințele și conștientizarea necesare pentru a se proteja eficient împotriva amenințărilor cibernetice. DefenderX își propune să umple această lacună prin furnizarea unei unelte simple și ușor de utilizat care permite indivizilor să verifice starea de securitate a fișierelor și URL-urilor lor. Prin furnizarea acestor informații, îi putem ajuta pe utilizatori să ia decizii informate și să întreprindă acțiuni necesare pentru a-și îmbunătăți securitatea cibernetică.</p>
+                    
+                    <h2>Misiunea noastră</h2>
+                    <p>La DefenderX, misiunea noastră este să oferim persoanelor și organizațiilor cunoștințele, instrumentele și resursele necesare pentru a se apăra proactiv împotriva amenințărilor cibernetice. Ne străduim să creăm un mediu digital mai sigur și să promovăm o cultură a conștientizării și rezilienței în domeniul securității cibernetice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
