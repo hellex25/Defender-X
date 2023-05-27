@@ -53,6 +53,8 @@ The following components in this project were not developed by the author(s) and
 
 4. Code for checking if a URL is valid: [Code Snippet]
 
+5.Some Buttons and CSS code 
+
 ## Dependencies
 DefenderX relies on the following dependencies:
 - Flask: A web framework for building the application.
